@@ -23,8 +23,10 @@ This happens in Application layer which includes (View layer -> Service Layer).
 
 ### 1. Char to ASCII conversion:
 
+```txt
 'h' ~ 104
 'i' ~ 105
+```
 
 |      | 128  | 64   | 32   | 16   | 8    | 4    | 2    | 1    |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -34,9 +36,10 @@ This happens in Application layer which includes (View layer -> Service Layer).
 
 ### 2. ASCII to Base2 conversion:
 
+```txt
 'h' ~ 104 -> 01101000
 'i' ~ 105 -> 01101001
-
+```
 
 ### 3. Base2 to bytes stream:
 
