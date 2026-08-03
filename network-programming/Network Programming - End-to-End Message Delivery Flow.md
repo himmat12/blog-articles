@@ -12,12 +12,13 @@ message = "hi"
 
 Serializes the python `Message` object to JSON/ protocol buffers given the email program is build on python.
 
+```txt
 This happens in Application layer which includes (View layer -> Service Layer).
-						  ---------------------------
+-------------------------------------------------------------------------------
 							       |
 							       |
 							       v
-							
+```						
 
 ## Byte Encoding before streaming to sockets over TCP with IP
 
@@ -28,13 +29,13 @@ This happens in Application layer which includes (View layer -> Service Layer).
 'i' ~ 105
 ```
 
+### 2. ASCII to Base2 conversion:
+
 |      | 128  | 64   | 32   | 16   | 8    | 4    | 2    | 1    |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | 'h'  | 0    | 1	 | 1    | 0	   | 1	  | 0    | 0    | 0    |
 | 'i'  | 0	  | 1    | 1    | 0	   | 1	  | 0    | 0    | 1    |
 
-
-### 2. ASCII to Base2 conversion:
 
 ```txt
 'h' ~ 104 -> 01101000
